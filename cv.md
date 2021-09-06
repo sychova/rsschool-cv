@@ -2,8 +2,8 @@
 ![Profile image should go here](images/avatar.png)
 
 **Hello, and welcome to my CV**
-My name is Anastasiya Sychova.
-I am an aspiring front-end developer, looking for a job opportunity.
+My name is Anastasiya Sychova. \
+I am an aspiring front-end developer, looking for a job opportunity. \
 *PLEASE FEEL FREE TO LOOK AROUND. =)*
 
 ## Contact info:
