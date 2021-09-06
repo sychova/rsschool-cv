@@ -83,20 +83,20 @@ https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/
 ## Working experience:
 **Company:** AIS Novations \
 **Dates:** 28.10.2016 - today \
-**Position:** \
+**Position:**
 * **01.11.2018 - today** BA
     * *Responsibilities*
-* Working closely with the stakeholder on requirements elicitation and validation. Always keeping in mind the way they might affect the rest of the app. Working through any discrepancies that come up
-* Making an in-depth analysis of suggested changes. Working with the root cause of the change, troubleshooting any discrepancies arising between existing and new functionality. Monitoring and ensuring that the consistency across project modules is maintained
-* Working closely with the dev, QA and design team when defining requirements and acceptance criteria. To ensure that any possible development, testing or UX issue is considered and discussed, as well as making sure everybody is on the same page
-* Managing and supporting the SRS document over the whole lifespan of the project. Making sure the information is up to date and can easily be understood by any team member (new to the project or not)
-* Submitting change requests into the Jira system, decomposing them into small logical User Stories or Epics if needed, building dependencies between them and Backlog items if necessary
-* Holding introductory meetings on new features for the team to help with general understanding and planning
-* Managing the Daily standup meetings (when the need arises)
-* Preparing Backlog items for grooming sessions (or if their priority goes up), checking if they’re still up to date with the current state of the project or need to be updated
-* Analyzing customer review feedback in case it contains change requests
-* Act as primary contact point for communicating with the customer regarding any functionality changes or during the review stage of the new functionality implementation
-* Being the main source of information for the team regarding the project requirements
+        * Working closely with the stakeholder on requirements elicitation and validation. Always keeping in mind the way they might affect the rest of the app. Working through any discrepancies that come up
+        * Making an in-depth analysis of suggested changes. Working with the root cause of the change, troubleshooting any discrepancies arising between existing and new functionality. Monitoring and ensuring that the consistency across project modules is maintained
+        * Working closely with the dev, QA and design team when defining requirements and acceptance criteria. To ensure that any possible development, testing or UX issue is considered and discussed, as well as making sure everybody is on the same page
+        * Managing and supporting the SRS document over the whole lifespan of the project. Making sure the information is up to date and can easily be understood by any team member (new to the project or not)
+        * Submitting change requests into the Jira system, decomposing them into small logical User Stories or Epics if needed, building dependencies between them and Backlog items if necessary
+        * Holding introductory meetings on new features for the team to help with general understanding and planning
+        * Managing the Daily standup meetings (when the need arises)
+        * Preparing Backlog items for grooming sessions (or if their priority goes up), checking if they’re still up to date with the current state of the project or need to be updated
+        * Analyzing customer review feedback in case it contains change requests
+        * Act as primary contact point for communicating with the customer regarding any functionality changes or during the review stage of the new functionality implementation
+        * Being the main source of information for the team regarding the project requirements
 * **28.10.2016 - 31.10.2018** QA Engineer
     * *Responsibilities*
         * Careful analysis of requirements, specification to provide better testing documentation
