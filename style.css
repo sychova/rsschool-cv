@@ -6,8 +6,9 @@
     --main-links: #25282B;
 }
 
-
-/* background-color: var(--main-yellow); */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0px;

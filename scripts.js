@@ -1,12 +1,24 @@
-(function() {
+{/* <script>
+  window.onload = function() {
+    alert('Страница загружена');
+
+    // к этому моменту страница загружена
+    alert(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
+  };
+</script> */}
+
+
+
+window.onload = function() {
     // Tab controls
-    let tablinks = $(".tablinks");
+    let tablinks = document.getElementsByClassName("tablinks");
+    console.log(tablinks);
     for (var i = 0; i < tablinks.length; i++) {
-        $(tablinks[i]).on("click", function(event) {
-            openTab(event, $(this).attr("data-tab"));
+        tablinks[i].addEventListener("click", function(event) {
+            openTab(event, this.getAttribute("data-tab"));
         });
     }
-    $(tablinks[0]).click();
+    tablinks[0].click();
 
     //Slider controls
     let eduSlideIndex = 1;
@@ -14,40 +26,40 @@
     // showSlide("educationSlides", eduSlideIndex);
     // showSlide("workSlides", workSlideIndex);
 
-    let prevArrow = $(".prev");
+    let prevArrow = document.getElementsByClassName("prev");
     for (var i = 0; i < prevArrow.length; i++) {
-        $(prevArrow[i]).on("click", function() {
-            let prevClass = $(this).prev().attr("class").split(" ")[0];
+        prevArrow[i].addEventListener("click", function() {
+            let prevClass = this.prev().attr("class").split(" ")[0];
             moveSlide(prevClass, -1);
             console.log(ttt);
             console.log("Previous clicked");
-            console.log($(this).prev().attr("class").split(" ")[0]);
+            console.log(this.prev().attr("class").split(" ")[0]);
         });
     }
-    let nextArrow = $(".next");
+    let nextArrow = document.getElementsByClassName("next");
     for (var i = 0; i < nextArrow.length; i++) {
-        $(nextArrow[i]).on("click", function() {
-            let nextClass = $(this).prev().prev().attr("class").split(" ")[0];
+        nextArrow[i].addEventListener("click", function() {
+            let nextClass = this.prev().prev().attr("class").split(" ")[0];
             moveSlide(nextSlide, 1);
             console.log("Next clicked");
-            console.log($(this).prev().prev().attr("class").split(" ")[0]);
+            console.log(this.prev().prev().attr("class").split(" ")[0]);
         });
     }
-})();
+};
 
 function openTab(event, activityName) {
-    let tabcontent = $(".tabcontent");
+    let tabcontent = document.getElementsByClassName("tabcontent");
     for (var i = 0; i < tabcontent.length; i++) {
-        $(tabcontent[i]).attr("style", "display: none");
+        tabcontent[i].setAttribute("style", "display: none");
     }
 
-    let tablinks = $(".tablinks");
+    let tablinks = document.getElementsByClassName("tablinks");
     for (var i = 0; i < tablinks.length; i++) {
-        $(tablinks[i]).removeClass("active");
+        tablinks[i].classList.remove("active");
     }
 
-    $("#" + activityName).attr("style", "display: block");
-    $(event.target).addClass("active");
+    document.getElementById(activityName).setAttribute("style", "display: block");
+    event.target.classList.add("active");
 }
 
 
