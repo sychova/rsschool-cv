@@ -79,3 +79,49 @@ https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/
 * English Course (Central Officer’s House of the Armed Forces of the Republic of Belarus, 2007 - 2008)
 * English Course (Upper-Intermediate, B2) (Streamline, 2006 - 2007)
 * English Course (Intermediate, B1) (Streamline, 2005 - 2006)
+
+## Working experience:
+**Company:** AIS Novations \
+**Dates:** 28.10.2016 - today \
+**Position:** \
+* **01.11.2018 - today** BA
+    * *Responsibilities*
+* Working closely with the stakeholder on requirements elicitation and validation. Always keeping in mind the way they might affect the rest of the app. Working through any discrepancies that come up
+* Making an in-depth analysis of suggested changes. Working with the root cause of the change, troubleshooting any discrepancies arising between existing and new functionality. Monitoring and ensuring that the consistency across project modules is maintained
+* Working closely with the dev, QA and design team when defining requirements and acceptance criteria. To ensure that any possible development, testing or UX issue is considered and discussed, as well as making sure everybody is on the same page
+* Managing and supporting the SRS document over the whole lifespan of the project. Making sure the information is up to date and can easily be understood by any team member (new to the project or not)
+* Submitting change requests into the Jira system, decomposing them into small logical User Stories or Epics if needed, building dependencies between them and Backlog items if necessary
+* Holding introductory meetings on new features for the team to help with general understanding and planning
+* Managing the Daily standup meetings (when the need arises)
+* Preparing Backlog items for grooming sessions (or if their priority goes up), checking if they’re still up to date with the current state of the project or need to be updated
+* Analyzing customer review feedback in case it contains change requests
+* Act as primary contact point for communicating with the customer regarding any functionality changes or during the review stage of the new functionality implementation
+* Being the main source of information for the team regarding the project requirements
+* **28.10.2016 - 31.10.2018** QA Engineer
+    * *Responsibilities*
+        * Careful analysis of requirements, specification to provide better testing documentation
+        * In case no specification is available performing an in-depth reverse engineering analysis of the project to develop an intermediate SRS document
+        * Developing comprehensive and well-structured testing documentation, check lists and detailed test cases
+        * Constantly improving the existing testing documentation as needed with the project development
+        * Estimating, prioritizing planning testing activities
+        * Analyzing the project areas that require more attention, and creating documentation performing testing accordingly
+        * Fulfil test feature specific test runs as well as regression testing, reporting the found issues, test results and testing summaries in detail
+        * Working back to back with the dev team to uncover all the project modules affected by the fix/change to provide a better test coverage
+        * Acting as support for bugs reported by the customer, investigating the issue, providing
+        * Submitting it into the Jira system, making sure the bug has all the necessary attributes for the dev/QA team to work with
+        * Coordinating QA trainees as a part of company’s internship program
+
+**Company:** OJSC “Paritetbank” \
+**Dates:** 15.09.2014 - 14.09.2016 \
+**Position:** Specialist of International Operations Department \
+*Responsibilities*
+* Establishing and developing relations with national and foreign financial institutions
+* Managing the process of signing (negotiating, elaborating) general agreements on conducting interbank financial operations on money market with counterparty banks, correspondent relations agreements (NOSTRO/LORO); further support of the agreements
+* Maintaining and keeping the correspondent banking profiles up to date
+* Organizing and preparing negotiations with representatives of financial institutions, banks and other entities
+* Preparing the necessary documentations for concluding agreements on long term financing from other banks and financial institutions, further support of such agreements
+* Business correspondence with banks
+* Written translation of business correspondence, documents of bank’s other business units
+* Providing/updating information on bank’s website regarding department’s field of activity
+* Carrying out AML/CFT & KYC procedures within the department’s field of activity
+* Coordination of other bank’s units within the framework of cooperation with financial institutions
