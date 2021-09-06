@@ -58,13 +58,13 @@ Very invested in my job, which works well with being responsible and organized. 
 * Countles amount of articles and video tutorials :)
 * JS / FRONT-END. (Rolling Scopes 2021) (In Progress)
 * JS / FRONT-END. STAGE 0 (RollingScopes 2021) (In Progress)
-* JavaScript Algorithms and Data Structures (freeCodeCamp 2021)
+* JavaScript Algorithms and Data Structures (freeCodeCamp 2021) \
 https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/
-* JavaScript for beginners (Code Basics 2021)
+* JavaScript for beginners (Code Basics 2021) \
 (https://ru.code-basics.com/languages/html)
-* CSS for beginners (Code Basics 2021)
+* CSS for beginners (Code Basics 2021) \
 (https://ru.code-basics.com/languages/css)
-* HTML for beginners (Code Basics 2021)
+* HTML for beginners (Code Basics 2021) \
 (https://ru.code-basics.com/languages/html)
 * Business Analysis (IT Academy, 2019)
 * Web app development using HTML, CSS, JavaScript (IT Academy, 2017 - 2018)
