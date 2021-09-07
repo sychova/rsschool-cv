@@ -12,7 +12,6 @@
 window.onload = function() {
     // Tab controls
     let tablinks = document.getElementsByClassName("tablinks");
-    console.log(tablinks);
     for (var i = 0; i < tablinks.length; i++) {
         tablinks[i].addEventListener("click", function(event) {
             openTab(event, this.getAttribute("data-tab"));
@@ -29,20 +28,13 @@ window.onload = function() {
     let prevArrow = document.getElementsByClassName("prev");
     for (var i = 0; i < prevArrow.length; i++) {
         prevArrow[i].addEventListener("click", function() {
-            let prevClass = this.prev().attr("class").split(" ")[0];
-            moveSlide(prevClass, -1);
-            console.log(ttt);
             console.log("Previous clicked");
-            console.log(this.prev().attr("class").split(" ")[0]);
         });
     }
     let nextArrow = document.getElementsByClassName("next");
     for (var i = 0; i < nextArrow.length; i++) {
         nextArrow[i].addEventListener("click", function() {
-            let nextClass = this.prev().prev().attr("class").split(" ")[0];
-            moveSlide(nextSlide, 1);
             console.log("Next clicked");
-            console.log(this.prev().prev().attr("class").split(" ")[0]);
         });
     }
 };
