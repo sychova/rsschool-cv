@@ -245,20 +245,21 @@ figure>img {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
     background-color: transparent;
     color: #000000;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 0px 0px 3px;
 }
 
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: -50px;
+    border-radius: 3px 0px 0px 3px;
 }
 
 .prev:hover,
