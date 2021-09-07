@@ -247,6 +247,7 @@ figure>img {
     width: auto;
     margin-top: -22px;
     padding: 16px;
+    background-color: transparent;
     color: #000000;
     font-weight: bold;
     font-size: 18px;
