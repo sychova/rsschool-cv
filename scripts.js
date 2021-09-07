@@ -61,6 +61,11 @@ function switchSlide(slideSet, slideChange) {
     showSlide(slideSet, slideIndex += slideChange);
 }
 
-
-// if (n > x.length) {slideIndex[no] = 1}
-// if (n < 1) {slideIndex[no] = x.length}
+function navMenu() {
+    let status = document.getElementById("menu").getAttribute("style", "width");
+    if (status != "width: 200px") {
+        document.getElementById("menu").setAttribute("style", "width: 200px");
+    } else {
+        document.getElementById("menu").setAttribute("style", "width: 0px");
+    }
+}

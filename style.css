@@ -22,6 +22,28 @@ header {
     top: 0px;
 }
 
+nav {
+    position: fixed;
+    z-index: 1;
+    width: 0px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--main-yellow);
+    overflow-x: hidden;
+    transition: 500ms;
+}
+
+nav h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 130%;
+    margin: 0px auto 10px;
+    color: var(--main-grey);
+}
+
 header nav ul {
     padding: 0px;
 }
@@ -35,6 +57,11 @@ header nav ul {
 } */
 
 header nav ul li a {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 200%;
     text-decoration: none;
     color: #000000;
 }
@@ -55,7 +82,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 10px;
+    padding: 0px 10px 20px 10px;
 }
 
 figcaption {
@@ -80,6 +107,16 @@ figure>img {
     height: 80px;
 }
 
+.intro_info img {
+    width: 50px;
+    height: 50px;
+}
+
+.intro_info img:hover {
+    filter: invert(80%) sepia(78%) saturate(1150%) hue-rotate(328deg) brightness(103%) contrast(104%);
+    cursor: pointer;
+}
+
 .intro_info h1 {
     font-family: 'Playfair Display', serif;
     font-style: normal;
@@ -89,11 +126,6 @@ figure>img {
 }
 
 .intro_info h2 {
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
     color: var(--main-grey);
 }
 
@@ -153,7 +185,6 @@ figure>img {
 
 .tabcontent {
     animation: fadeEffect 1s;
-    /* Fading effect takes 1 second */
 }
 
 
@@ -234,11 +265,6 @@ figure>img {
     margin: auto;
 }
 
-
-/* [class*="Slides"] {
-    display: none;
-} */
-
 .prev,
 .next {
     cursor: pointer;
@@ -298,7 +324,7 @@ footer {
     padding: 0px 10px 0px 10px;
 }
 
-.footer_wrapper>ul>li>a>img {
+.footer_wrapper img {
     width: 50px;
     height: 50px;
 }
