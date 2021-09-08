@@ -12,14 +12,14 @@ window.onload = function() {
     let prevArrow = document.getElementsByClassName("prev");
     for (var i = 0; i < prevArrow.length; i++) {
         prevArrow[i].addEventListener("click", function() {
-            let slideSet = this.closest("section").getAttribute("id");
+            let slideSet = this.closest("article").getAttribute("id");
             switchSlide(slideSet, -1);
         });
     }
     let nextArrow = document.getElementsByClassName("next");
     for (var i = 0; i < nextArrow.length; i++) {
         nextArrow[i].addEventListener("click", function() {
-            let slideSet = this.closest("section").getAttribute("id");
+            let slideSet = this.closest("article").getAttribute("id");
             switchSlide(slideSet, 1);
         });
     }
