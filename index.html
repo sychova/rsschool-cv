@@ -11,11 +11,11 @@
 
 <body>
     <header>
-        <a onclick="navMenu()"><img src="images/icons/menu.svg" alt="Menu"></a>
-        <nav id="menu">
+        <a class="menuControls"><img src="images/icons/menu.svg" alt="Menu"></a>
+        <nav id="Menu">
             <div class="menuHeader">
                 <h2>Menu</h2>
-                <a onclick="navMenu()">&#10006;</a>
+                <a class="menuControls">&#10006;</a>
             </div>
             <ul>
                 <li><a href="#About">About me</a>
@@ -25,9 +25,9 @@
                         <li><a href="#Hobbies">Hobbies</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Working experience</a></li>
-                <li><a href="#">Coding experience</a></li>
+                <li><a class="navLinks" data-tab="Education" href="#Education">Education</a></li>
+                <li><a class="navLinks" data-tab="Work" href="#Work">Working experience</a></li>
+                <li><a class="navLinks" data-tab="Programming" href="#Programming">Programming experience</a></li>
             </ul>
         </nav>
     </header>
@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="wrapper">
                     <figure>
-                        <img src="/images/about.jpg">
+                        <img src="images/about.png" alt="About">
                     </figure>
                     <div class="about_card">
                         <h2>About me</h2>
@@ -143,17 +143,19 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="Experience">
             <div class="container">
-                <div class="tab">
-                    <button class="tablinks" data-tab="Education">Education</button>
-                    <button class="tablinks" data-tab="Work">Work experience</button>
-                    <button class="tablinks" data-tab="Programming">Programming experience</button>
+                <div class="wrapperTab">
+                    <div class="tab">
+                        <button class="tabLinks" id="tabLinkEducation" data-tab="Education">Education</button>
+                        <button class="tabLinks" id="tabLinkWork" data-tab="Work">Work experience</button>
+                        <button class="tabLinks" id="tabLinkProgramming" data-tab="Programming">Programming experience</button>
+                    </div>
                 </div>
             </div>
             <article id="Education" class="tabcontent">
+                <h2>Education</h2>
                 <div class="container">
-                    <h2>Education</h2>
                     <div class="wrapper">
                         <div class="educationSlideshow">
                             <button class="prev">&#10094;</button>
@@ -164,6 +166,9 @@
                                     <p>Specialization: World economy</p>
                                     <p>Graduated: 2014</p>
                                 </div>
+                                <figure>
+                                    <img src="images/BSU_logo.png" alt="BSU logo">
+                                </figure>
                             </article>
                             <article class="educationSlides education_card">
                                 <h3>IT related courses:</h3>
@@ -204,16 +209,14 @@
                 </div>
             </article>
             <article id="Work" class="tabcontent">
+                <h2>Working experience</h2>
                 <div class="container">
-                    <h2>Working experience</h2>
                     <div class="wrapper">
                         <div class="workSlideshow">
                             <button class="prev">&#10094;</button>
                             <article class="workSlides work_card">
                                 <h3>Business Analyst</h3>
-                                <p>Period: 01.11.2018 - today</p>
-                                <p>Company: AIS Novations</p>
-                                <p>Responsibilities:</p>
+                                <span>Period: 01.11.2018 - today<br>Company: AIS Novations<br>Responsibilities:</span>
                                 <ul>
                                     <li>Working closely with the stakeholder on requirements elicitation and validation. Always keeping in mind the way they might affect the rest of the app. Working through any discrepancies that come up</li>
                                     <li>Making an in-depth analysis of suggested changes. Working with the root cause of the change, troubleshooting any discrepancies arising between existing and new functionality. Monitoring and ensuring that the consistency
@@ -232,9 +235,7 @@
                             </article>
                             <article class="workSlides work_card">
                                 <h3>QA Engineer</h3>
-                                <p>Period: 28.10.2016 - 31.10.2018</p>
-                                <p>Company: AIS Novations</p>
-                                <p>Responsibilities:</p>
+                                <span>Period: 28.10.2016 - 31.10.2018<br>Company: AIS Novations<br>Responsibilities:</span>
                                 <ul>
                                     <li>Careful analysis of requirements, specification to provide better testing documentation</li>
                                     <li>In case no specification is available performing an in-depth reverse engineering analysis of the project to develop an intermediate SRS document</li>
@@ -251,9 +252,7 @@
                             </article>
                             <article class="workSlides work_card">
                                 <h3>Specialist of International Operations Department</h3>
-                                <p>Period: 15.09.2014 - 14.09.2016</p>
-                                <p>Company: OJSC “Paritetbank”</p>
-                                <p>Responsibilities:</p>
+                                <span>Period: 15.09.2014 - 14.09.2016<br>Company: OJSC “Paritetbank”<br>Responsibilities:</span>
                                 <ul>
                                     <li>Establishing and developing relations with national and foreign financial institutions</li>
                                     <li>Managing the process of signing (negotiating, elaborating) general agreements on conducting interbank financial operations on money market with counterparty banks, correspondent relations agreements (NOSTRO/LORO); further
@@ -274,8 +273,8 @@
                 </div>
             </article>
             <article id="Programming" class="tabcontent">
+                <h2>Programming experience</h2>
                 <div class="container">
-                    <h2>Programming experience</h2>
                     <div class="wrapper">
                         <div class="programmingSlideshow">
                             <button class="prev">&#10094;</button>

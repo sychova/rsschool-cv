@@ -1,10 +1,29 @@
 window.onload = function() {
-    // Tab controls
-    let tablinks = document.getElementsByClassName("tablinks");
-    for (var i = 0; i < tablinks.length; i++) {
-        tablinks[i].addEventListener("click", function(event) {
+    let menuControls = document.getElementsByClassName("menuControls");
+    for (var i = 0; i < menuControls.length; i++) {
+        menuControls[i].addEventListener("click", function() {
+            navMenu();
+        });
+    }
+
+    let navLinks = document.getElementsByClassName("navLinks");
+    for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener("click", function() {
+            console.log("iteration" + i);
+            let tabLink = document.getElementsByClassName("tabLinks");
+            console.log("list of tablinks" + tabLink);
             let activityName = this.getAttribute("data-tab");
-            openTab(event, activityName);
+            openTab(activityTab, activityName);
+            showSlide(activityName, slideIndex = 0);
+        });
+    }
+
+    let tabLinks = document.getElementsByClassName("tabLinks");
+    for (var i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].addEventListener("click", function() {
+            let activityTab = this.getAttribute("id");
+            let activityName = this.getAttribute("data-tab");
+            openTab(activityTab, activityName);
             showSlide(activityName, slideIndex = 0);
         });
     }
@@ -24,23 +43,23 @@ window.onload = function() {
         });
     }
 
-    tablinks[0].click();
+    tabLinks[0].click();
 };
 
 let slideIndex = 0;
 
-function openTab(event, activityName) {
+function openTab(activityTab, activityName) {
     let tabcontent = document.getElementsByClassName("tabcontent");
     for (var i = 0; i < tabcontent.length; i++) {
         tabcontent[i].setAttribute("style", "display: none");
     }
 
-    let tablinks = document.getElementsByClassName("tablinks");
-    for (var i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
+    let tabLinks = document.getElementsByClassName("tabLinks");
+    for (var i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active");
     }
     document.getElementById(activityName).setAttribute("style", "display: block");
-    event.target.classList.add("active");
+    document.getElementById(activityTab).classList.add("active");
 }
 
 function showSlide(slideSet, slideShow) {
@@ -62,10 +81,10 @@ function switchSlide(slideSet, slideChange) {
 }
 
 function navMenu() {
-    let status = document.getElementById("menu").getAttribute("style", "width");
-    if (status != "width: 200px") {
-        document.getElementById("menu").setAttribute("style", "width: 200px");
+    let status = document.getElementById("Menu").getAttribute("style", "width");
+    if (status != "width: 230px") {
+        document.getElementById("Menu").setAttribute("style", "width: 230px");
     } else {
-        document.getElementById("menu").setAttribute("style", "width: 0px");
+        document.getElementById("Menu").setAttribute("style", "width: 0px");
     }
 }
