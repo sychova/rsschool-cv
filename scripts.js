@@ -8,12 +8,11 @@ window.onload = function() {
 
     let navLinks = document.getElementsByClassName("navLinks");
     for (var i = 0; i < navLinks.length; i++) {
+        let j = i;
         navLinks[i].addEventListener("click", function() {
-            console.log("iteration" + i);
-            let tabLink = document.getElementsByClassName("tabLinks");
-            console.log("list of tablinks" + tabLink);
+            let tabID = document.getElementsByClassName("tabLinks")[j].getAttribute("id");
             let activityName = this.getAttribute("data-tab");
-            openTab(activityTab, activityName);
+            openTab(tabID, activityName);
             showSlide(activityName, slideIndex = 0);
         });
     }
