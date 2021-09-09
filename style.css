@@ -164,6 +164,10 @@ figure {
     margin: auto;
 }
 
+.tab {
+    margin-left: 20px;
+}
+
 .tab button:hover {
     background-color: var(--main-yellow);
 }
@@ -173,7 +177,7 @@ figure {
     border: 2px solid var(--main-yellow);
 }
 
-.tabcontent h2 {
+.tabcontent h3 {
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: bold;
@@ -186,6 +190,7 @@ figure {
 
 /* About */
 
+#Trivia h2,
 .wrapper h2 {
     font-family: 'Playfair Display', serif;
     font-style: normal;
@@ -263,6 +268,11 @@ figure {
     margin: 10px 0px;
 }
 
+#Trivia>div>h2 {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
 #Education img {
     width: 400px;
 }
@@ -282,7 +292,7 @@ figure {
     text-align: center;
 }
 
-#Experience h3 {
+#Experience h4 {
     font-weight: 700;
     font-size: 30px;
     margin: 10px 0px;

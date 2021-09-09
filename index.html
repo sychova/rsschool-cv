@@ -73,8 +73,9 @@
         </section>
         <section id="Trivia">
             <div class="container">
+                <h2>Some trivia about me</h2>
                 <div class="wrapper">
-                    <div id="Skills" class="skills_card">
+                    <article id="Skills" class="skills_card">
                         <h2>Skills:</h2>
                         <ul>
                             <li>HTML5</li>
@@ -88,9 +89,10 @@
                             <li>Version Control (Git)</li>
                             <li>Agile (SCRUM & Kanban)</li>
                             <li>SQL</li>
+                            <li>I will add more with time, that's why the space on the right is empty. :)</li>
                         </ul>
-                    </div>
-                    <div id="Languages" class="languages_card">
+                    </article>
+                    <article id="Languages" class="languages_card">
                         <h2>Languages:</h2>
                         <div class="languages_wrapper">
                             <figure>
@@ -110,8 +112,8 @@
                                 <figcaption>Polish (Beginner)</figcaption>
                             </figure>
                         </div>
-                    </div>
-                    <div id="Hobbies" class="hobbies_card">
+                    </article>
+                    <article id="Hobbies" class="hobbies_card">
                         <h2>Hobbies:</h2>
                         <div class="hobbies_wrapper">
                             <figure>
@@ -139,13 +141,14 @@
                                 <figcaption>Sewing</figcaption>
                             </figure>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
         <section id="Experience">
             <div class="container">
                 <div class="wrapperTab">
+                    <h2>Experiences:</h2>
                     <div class="tab">
                         <button class="tabLinks" id="tabLinkEducation" data-tab="Education">Education</button>
                         <button class="tabLinks" id="tabLinkWork" data-tab="Work">Work experience</button>
@@ -154,13 +157,13 @@
                 </div>
             </div>
             <article id="Education" class="tabcontent">
-                <h2>Education</h2>
+                <h3>Education</h3>
                 <div class="container">
                     <div class="wrapper">
                         <div class="educationSlideshow">
                             <button class="prev">&#10094;</button>
                             <article class="educationSlides education_card">
-                                <h3>Belarusian State University</h3>
+                                <h4>Belarusian State University</h4>
                                 <div>
                                     <p>Faculty: International Relations</p>
                                     <p>Specialization: World economy</p>
@@ -171,7 +174,7 @@
                                 </figure>
                             </article>
                             <article class="educationSlides education_card">
-                                <h3>IT related courses:</h3>
+                                <h4>IT related courses:</h4>
                                 <ul>
                                     <li>Countles amount of articles and video tutorials :)</li>
                                     <li>JS / FRONT-END. (Rolling Scopes 2021) (In Progress)</li>
@@ -194,7 +197,7 @@
                                 </ul>
                             </article>
                             <article class="educationSlides education_card">
-                                <h3>Languages:</h3>
+                                <h4>Languages:</h4>
                                 <ul>
                                     <li>Polish Course (A1, A2) (Studiopolish, 2020 - 2021)</li>
                                     <li>General English (Level 5/C1 (Advanced)) (EmbassyCES Summer, London Southbank, 2011)</li>
@@ -209,13 +212,13 @@
                 </div>
             </article>
             <article id="Work" class="tabcontent">
-                <h2>Working experience</h2>
+                <h3>Working experience</h3>
                 <div class="container">
                     <div class="wrapper">
                         <div class="workSlideshow">
                             <button class="prev">&#10094;</button>
                             <article class="workSlides work_card">
-                                <h3>Business Analyst</h3>
+                                <h4>Business Analyst</h4>
                                 <span>Period: 01.11.2018 - today<br>Company: AIS Novations<br>Responsibilities:</span>
                                 <ul>
                                     <li>Working closely with the stakeholder on requirements elicitation and validation. Always keeping in mind the way they might affect the rest of the app. Working through any discrepancies that come up</li>
@@ -234,7 +237,7 @@
                                 </ul>
                             </article>
                             <article class="workSlides work_card">
-                                <h3>QA Engineer</h3>
+                                <h4>QA Engineer</h4>
                                 <span>Period: 28.10.2016 - 31.10.2018<br>Company: AIS Novations<br>Responsibilities:</span>
                                 <ul>
                                     <li>Careful analysis of requirements, specification to provide better testing documentation</li>
@@ -251,7 +254,7 @@
                                 </ul>
                             </article>
                             <article class="workSlides work_card">
-                                <h3>Specialist of International Operations Department</h3>
+                                <h4>Specialist of International Operations Department</h4>
                                 <span>Period: 15.09.2014 - 14.09.2016<br>Company: OJSC “Paritetbank”<br>Responsibilities:</span>
                                 <ul>
                                     <li>Establishing and developing relations with national and foreign financial institutions</li>
@@ -273,15 +276,21 @@
                 </div>
             </article>
             <article id="Programming" class="tabcontent">
-                <h2>Programming experience</h2>
+                <h3>Programming experience</h3>
                 <div class="container">
                     <div class="wrapper">
                         <div class="programmingSlideshow">
                             <button class="prev">&#10094;</button>
                             <article class="programmingSlides programming_card">
-                                <h3>GitHub</h3>
+                                <h4>GitHub</h4>
                                 <div>
                                     <p>My profile: <a href="https://github.com/sychova">GitHub profile</a></p>
+                                    <span>Projects:</span>
+                                    <ul>
+                                        <li><a href="https://sychova.github.io/tag-manager/" target="_blank">Tag manager</a></li>
+                                        <li><a href="https://sychova.github.io/UserList_CRUD_Basic/" target="_blank">User manager</a></li>
+                                        <li><a href="https://sychova.github.io/rsschool-cv-old/" target="_blank">CV OLD</a></li>
+                                    </ul>
                                     <p>Example:</p>
                                     <p>This function is a Create part of a CRUD list of records/tags.</p>
                                     <div>
@@ -293,7 +302,7 @@
                                                 localStorage.setItem(tagID, tagName);
                                                 tagListBuilder();
                                             } else {
-                                                for (var i = 0; i < tagName.length; i++) {
+                                                for (var i = 0; i &lt; tagName.length; i++) {
                                                     if (tagName[i].length > 0) {
                                                         let tagID = generateID(Object.keys(localStorage));
                                                         localStorage.setItem(tagID, tagName[i]);
@@ -307,7 +316,7 @@
                                 </div>
                             </article>
                             <article class="programmingSlides programming_card">
-                                <h3>Codewars</h3>
+                                <h4>Codewars</h4>
                                 <div>
                                     <p>My profile: <a href="https://www.codewars.com/users/sychova">Codewars profile</a></p>
                                     <p>Kata example:</p>
