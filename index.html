@@ -33,8 +33,8 @@
     </header>
     <main>
         <section id="Intro">
-            <a class="menuControls"><img src="images/icons/menu.svg" alt="Menu"></a>
             <div class="container">
+                <a class="menuControls"><img src="images/icons/menu.svg" alt="Menu"></a>
                 <div class="wrapper">
                     <div class="intro_info">
                         <h1>Hello, and welcome<br>to my CV</h1>
@@ -302,66 +302,74 @@
                         <div class="programmingSlideshow">
                             <button class="prev">&#10094;</button>
                             <article class="programmingSlides programming_card">
-                                <h4>GitHub</h4>
                                 <div>
-                                    <p>My profile: <a href="https://github.com/sychova">GitHub profile</a></p>
-                                    <span>Projects:</span>
-                                    <ul>
-                                        <li><a href="https://sychova.github.io/tag-manager/" target="_blank">Tag manager</a></li>
-                                        <li><a href="https://sychova.github.io/UserList_CRUD_Basic/" target="_blank">User manager</a></li>
-                                        <li><a href="https://sychova.github.io/rsschool-cv-old/" target="_blank">CV OLD</a></li>
-                                    </ul>
-                                    <p>Example:</p>
-                                    <p>This function is a Create part of a CRUD list of records/tags.</p>
                                     <div>
-                                        <pre>
-                                            <code class="javascript">
-                                                function addTag(tagNames) {
-                                                    let tagName = tagNames.split(",");
-                                                    if (tagName.length == 1) {
-                                                        let tagID = generateID(Object.keys(localStorage));
-                                                        localStorage.setItem(tagID, tagName);
-                                                        tagListBuilder();
-                                                    } else {
-                                                        for (var i = 0; i &lt; tagName.length; i++) {
-                                                            if (tagName[i].length > 0) {
-                                                                let tagID = generateID(Object.keys(localStorage));
-                                                                localStorage.setItem(tagID, tagName[i]);
-                                                            }
-                                                        }
-                                                        tagListBuilder();
-                                                    }
-                                                }
-                                            </code>  
-                                        </pre>
+                                        <h4>CV (old) (GitHub)</h4>
+                                        <p>This is my old CV created during RS Stage 0 course.</p>
+                                        <p>HTML, CSS, JS</p>
+                                    </div>
+                                    <div>
+                                        <a href="https://sychova.github.io/rsschool-cv-old/" target="_blank">
+                                            <img src="images/project1.jpg">
+                                        </a>
                                     </div>
                                 </div>
                             </article>
                             <article class="programmingSlides programming_card">
-                                <h4>Codewars</h4>
                                 <div>
-                                    <p>My profile: <a href="https://www.codewars.com/users/sychova">Codewars profile</a></p>
-                                    <p>Kata example:</p>
-                                    <p>You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.</p>
+                                    <div>
+                                        <h4>User manager (CRUD) (GitHub)</h4>
+                                        <p>With this User manager you can add, edit and delete Users via local storage.</p>
+                                        <p>HTML, CSS, JS</p>
+                                    </div>
+                                    <div>
+                                        <a href="https://sychova.github.io/UserList_CRUD_Basic/" target="_blank">
+                                            <img src="images/project2.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="programmingSlides programming_card">
+                                <div>
+                                    <div>
+                                        <h4>Tag manager (GitHub)</h4>
+                                        <p>With this tag manager you can add and delete short bits of information via local storage.</p>
+                                        <p>HTML, CSS, JS</p>
+                                    </div>
+                                    <div>
+                                        <a href="https://sychova.github.io/tag-manager/" target="_blank">
+                                            <img src="images/project3.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="programmingSlides programming_card">
+                                <div>
+                                    <div>
+                                        <h4>Codewars</h4>
+                                        <p>My profile: <a href="https://www.codewars.com/users/sychova">Codewars profile</a></p>
+                                        <p>Kata example:</p>
+                                        <p>You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.</p>
+                                    </div>
                                     <div>
                                         <pre>
                                             <code>
-                                                function sortArray(array) {
-                                                    var indexArr = [];
-                                                    array.forEach((item, index) => {
-                                                        if (item % 2 != 0) {
-                                                            indexArr.push(index);
-                                                        }
-                                                    });
-                                                    var oddNum = array.filter((item) => item % 2 != 0);
-                                                    oddNum.sort((a, b) => {
-                                                        return a - b;
-                                                    })
-                                                    indexArr.forEach((item, index) => {
-                                                        array[item] = oddNum[index];
-                                                    });
-                                                    return array;
-                                                } 
+function sortArray(array) {
+    var indexArr = [];
+    array.forEach((item, index) => {
+        if (item % 2 != 0) {
+            indexArr.push(index);
+        }
+    });
+    var oddNum = array.filter((item) => item % 2 != 0);
+    oddNum.sort((a, b) => {
+        return a - b;
+    })
+    indexArr.forEach((item, index) => {
+        array[item] = oddNum[index];
+    });
+    return array;
+} 
                                             </code>
                                         </pre>
                                     </div>

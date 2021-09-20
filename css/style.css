@@ -16,6 +16,12 @@ body {
     background-color: var(--main-bg-grey);
 }
 
+pre,
+code {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* Header */
 
@@ -282,13 +288,30 @@ figure {
 }
 
 .education_card,
-.work_card,
-.programming_card {
+.work_card {
     min-width: 960px;
     min-height: 560px;
     padding: 5px 20px;
     margin: auto;
     font-family: 'Nunito';
+}
+
+.programming_card {
+    min-width: 960px;
+    padding: 5px 20px;
+    margin: auto;
+    font-family: 'Nunito';
+}
+
+.programming_card>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.programming_card>div div {
+    flex: 1 0 50%;
 }
 
 .education_card:first-of-type {
@@ -351,7 +374,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 344px;
-    background-image: url("images/footer_bg.svg");
+    background-image: url("../images/footer_bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
