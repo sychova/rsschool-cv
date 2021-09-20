@@ -16,6 +16,12 @@ body {
     background-color: var(--main-bg-grey);
 }
 
+pre,
+code {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* Header */
 
@@ -77,6 +83,10 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+.header_wrapper img:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(331deg) brightness(102%) contrast(101%);
+}
+
 
 /* Main */
 
@@ -90,8 +100,8 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10px 20px 10px;
-    margin: 10px 0px;
+    padding: 0px 10px 20px 10px;
+    margin: 0px 0px;
 }
 
 #Intro,
@@ -144,7 +154,7 @@ figure {
 }
 
 .intro_img>img {
-    margin-top: 115px;
+    margin-bottom: -25px;
     width: 630px;
 }
 
@@ -164,6 +174,10 @@ figure {
     margin: auto;
 }
 
+.tab {
+    margin-left: 20px;
+}
+
 .tab button:hover {
     background-color: var(--main-yellow);
 }
@@ -173,7 +187,7 @@ figure {
     border: 2px solid var(--main-yellow);
 }
 
-.tabcontent h2 {
+.tabcontent h3 {
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: bold;
@@ -186,6 +200,7 @@ figure {
 
 /* About */
 
+#Trivia h2,
 .wrapper h2 {
     font-family: 'Playfair Display', serif;
     font-style: normal;
@@ -263,14 +278,17 @@ figure {
     margin: 10px 0px;
 }
 
+#Trivia>div>h2 {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
 #Education img {
     width: 400px;
 }
 
 .education_card,
-.work_card,
-.programming_card {
-    box-shadow: 5px 5px 10px 5px var(--main-grey);
+.work_card {
     min-width: 960px;
     min-height: 560px;
     padding: 5px 20px;
@@ -278,11 +296,29 @@ figure {
     font-family: 'Nunito';
 }
 
+.programming_card {
+    min-width: 960px;
+    padding: 5px 20px;
+    margin: auto;
+    font-family: 'Nunito';
+}
+
+.programming_card>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.programming_card>div div {
+    flex: 1 0 50%;
+}
+
 .education_card:first-of-type {
     text-align: center;
 }
 
-#Experience h3 {
+#Experience h4 {
     font-weight: 700;
     font-size: 30px;
     margin: 10px 0px;
@@ -306,9 +342,10 @@ figure {
     align-items: flex-start;
 }
 
-pre {
+
+/* pre {
     background-color: var(--main-bg-darker-grey);
-}
+} */
 
 .prev,
 .next {
@@ -337,7 +374,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 344px;
-    background-image: url("images/footer_bg.svg");
+    background-image: url("../images/footer_bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -350,16 +387,19 @@ footer {
     align-items: center;
 }
 
-.footer_wrapper>ul {
+.footer_wrapper>ul,
+.header_wrapper>ul {
     padding: 0px 0px 10px 0px;
 }
 
-.footer_wrapper>ul>li {
+.footer_wrapper>ul>li,
+.header_wrapper>ul>li {
     display: inline;
     padding: 0px 10px 0px 10px;
 }
 
-.footer_wrapper img {
+.footer_wrapper img,
+.header_wrapper img {
     width: 50px;
     height: 50px;
 }
