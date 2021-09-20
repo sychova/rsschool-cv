@@ -77,6 +77,10 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+.header_wrapper img:hover {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(331deg) brightness(102%) contrast(101%);
+}
+
 
 /* Main */
 
@@ -90,8 +94,8 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10px 20px 10px;
-    margin: 10px 0px;
+    padding: 0px 10px 20px 10px;
+    margin: 0px 0px;
 }
 
 #Intro,
@@ -144,7 +148,7 @@ figure {
 }
 
 .intro_img>img {
-    margin-top: 115px;
+    margin-bottom: -25px;
     width: 630px;
 }
 
@@ -280,7 +284,6 @@ figure {
 .education_card,
 .work_card,
 .programming_card {
-    box-shadow: 5px 5px 10px 5px var(--main-grey);
     min-width: 960px;
     min-height: 560px;
     padding: 5px 20px;
@@ -360,16 +363,19 @@ footer {
     align-items: center;
 }
 
-.footer_wrapper>ul {
+.footer_wrapper>ul,
+.header_wrapper>ul {
     padding: 0px 0px 10px 0px;
 }
 
-.footer_wrapper>ul>li {
+.footer_wrapper>ul>li,
+.header_wrapper>ul>li {
     display: inline;
     padding: 0px 10px 0px 10px;
 }
 
-.footer_wrapper img {
+.footer_wrapper img,
+.header_wrapper img {
     width: 50px;
     height: 50px;
 }
