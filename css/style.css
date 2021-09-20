@@ -319,9 +319,10 @@ figure {
     align-items: flex-start;
 }
 
-pre {
+
+/* pre {
     background-color: var(--main-bg-darker-grey);
-}
+} */
 
 .prev,
 .next {

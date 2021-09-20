@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/an-old-hope.min.css">
     <title>CV - Sychova</title>
 </head>
 
@@ -314,23 +315,25 @@
                                     <p>This function is a Create part of a CRUD list of records/tags.</p>
                                     <div>
                                         <pre>
-                                        function addTag(tagNames) {
-                                            let tagName = tagNames.split(",");
-                                            if (tagName.length == 1) {
-                                                let tagID = generateID(Object.keys(localStorage));
-                                                localStorage.setItem(tagID, tagName);
-                                                tagListBuilder();
-                                            } else {
-                                                for (var i = 0; i &lt; tagName.length; i++) {
-                                                    if (tagName[i].length > 0) {
+                                            <code class="javascript">
+                                                function addTag(tagNames) {
+                                                    let tagName = tagNames.split(",");
+                                                    if (tagName.length == 1) {
                                                         let tagID = generateID(Object.keys(localStorage));
-                                                        localStorage.setItem(tagID, tagName[i]);
+                                                        localStorage.setItem(tagID, tagName);
+                                                        tagListBuilder();
+                                                    } else {
+                                                        for (var i = 0; i &lt; tagName.length; i++) {
+                                                            if (tagName[i].length > 0) {
+                                                                let tagID = generateID(Object.keys(localStorage));
+                                                                localStorage.setItem(tagID, tagName[i]);
+                                                            }
+                                                        }
+                                                        tagListBuilder();
                                                     }
                                                 }
-                                                tagListBuilder();
-                                            }
-                                        }
-                                    </pre>
+                                            </code>  
+                                        </pre>
                                     </div>
                                 </div>
                             </article>
@@ -342,23 +345,25 @@
                                     <p>You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.</p>
                                     <div>
                                         <pre>
-                                        function sortArray(array) {
-                                            var indexArr = [];
-                                            array.forEach((item, index) => {
-                                                if (item % 2 != 0) {
-                                                    indexArr.push(index);
-                                                }
-                                            });
-                                            var oddNum = array.filter((item) => item % 2 != 0);
-                                            oddNum.sort((a, b) => {
-                                                return a - b;
-                                            })
-                                            indexArr.forEach((item, index) => {
-                                                array[item] = oddNum[index];
-                                            });
-                                            return array;
-                                        }
-                                    </pre>
+                                            <code>
+                                                function sortArray(array) {
+                                                    var indexArr = [];
+                                                    array.forEach((item, index) => {
+                                                        if (item % 2 != 0) {
+                                                            indexArr.push(index);
+                                                        }
+                                                    });
+                                                    var oddNum = array.filter((item) => item % 2 != 0);
+                                                    oddNum.sort((a, b) => {
+                                                        return a - b;
+                                                    })
+                                                    indexArr.forEach((item, index) => {
+                                                        array[item] = oddNum[index];
+                                                    });
+                                                    return array;
+                                                } 
+                                            </code>
+                                        </pre>
                                     </div>
                                 </div>
                             </article>
@@ -399,6 +404,10 @@
         </div>
     </footer>
     <script src="scripts.js"></script>
+    <script src="libs/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 </body>
 
 </html>
