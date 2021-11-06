@@ -7,7 +7,6 @@ I am an aspiring front-end developer, looking for a job opportunity. \
 *PLEASE FEEL FREE TO LOOK AROUND. =)*
 
 ## Contact info:
-* Phone: +375 (29) 321-65-75
 * Email: anastasiya.sychova@gmail.com
 * Skype: anastasiya.sychova
 
